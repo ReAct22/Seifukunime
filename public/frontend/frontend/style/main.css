@@ -1,0 +1,121 @@
+body {
+  background-color: #121212;
+  font-family: 'Assistant', sans-serif;
+  color: #fff;
+}
+
+nav {
+  border-bottom-right-radius: 14px;
+  border-bottom-left-radius: 14px;
+  background-color: #121212;
+  opacity: 0.9;
+}
+
+.navbar-brand img {
+  max-height: 40px;
+}
+
+.auto {
+  width: 300px;
+  height: 300px;
+  border: 1px;
+  overflow: auto;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #49B2ED;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  font-weight: bold;
+  color: #49B2ED !important;
+}
+
+header {
+  padding: 180px 0 165px;
+  margin-top: -70px;
+  background-image: url("../image/d7t1lcx-f63e32f5-57af-431a-8f05-22d3d75a5414.jpg");
+  background-size: cover;
+}
+
+header h1, header p {
+  color: #1c42e7;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+header p {
+  font-size: 22px;
+}
+
+header .btn-get-started {
+  background-color: #ff9e53;
+  color: #ffffff;
+}
+
+header .btn-get-started:hover {
+  background-color: #ffaa69;
+  color: #ffffff;
+}
+
+hr {
+  background-color: #fff;
+}
+
+.font-label {
+  color: blue;
+  font-size: 40px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  -webkit-text-stroke: 0.04em #ddd;
+}
+
+.section-content .section-anime-content .card-anime {
+  height: 342px;
+  width: 225px;
+  background-color: #ddd;
+  color: #fff;
+  padding: 30px;
+  background-size: cover;
+  margin-bottom: 20px;
+}
+
+.section-content .section-anime-content .anime-button .btn-anime-detail {
+  background-color: #ff9e53;
+  color: #ffffff;
+}
+
+.section-content .section-anime-content .anime-button .btn-anime-detail:hover {
+  background-color: #ffaa69;
+  color: #ffffff;
+}
+
+.section-content .section-anime-content .anime-title {
+  font-size: 18px;
+  color: #CEC6C6;
+}
+
+.section-content .section-anime-content .anime-title .anime-link {
+  color: #fff;
+}
+
+.section-content .section-anime-content .anime-title .anime-link:hover {
+  font-weight: bold;
+  color: #CEC6C6;
+}
+
+.section-content .section-anime-content .anime-episode {
+  font-size: 14px;
+  color: #CEC6C6;
+  opacity: 0.4;
+  filter: alpha(opcity=40);
+}
+
+.section-footer {
+  color: #fff;
+}
+/*# sourceMappingURL=main.css.map */
