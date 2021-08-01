@@ -4,6 +4,7 @@ namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use  App\Models\Anime;
 
 class AnimeController extends Controller
 {
@@ -14,7 +15,7 @@ class AnimeController extends Controller
      */
     public function index()
     {
-        //
+        return view('page.admin.anime.index');
     }
 
     /**

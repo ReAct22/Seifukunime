@@ -54,7 +54,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="{{ route('animes.index') }}" class="nav-link">
               <i class="nav-icon fas fa-copy"></i>
               <p>
                 Anime

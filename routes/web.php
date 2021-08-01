@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\admin\AdminController;
 use App\Http\Controllers\admin\GenreController;
+use App\Http\Controllers\admin\AnimeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,4 +23,5 @@ Route::prefix('admin')
     ->group(function() {
         Route::get('/', [AdminController::class, 'index'])->name('Dashboard');
         Route::resource('genres', GenreController::class);
+        Route::resource('animes', AnimeController::class);
     });
