@@ -5,6 +5,7 @@ namespace App\Http\Controllers\admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use  App\Models\Anime;
+use App\Models\Genre;
 
 class AnimeController extends Controller
 {
@@ -15,7 +16,10 @@ class AnimeController extends Controller
      */
     public function index()
     {
-        return view('page.admin.anime.index');
+        $anime = Anime::with(['genre'])->orderByDesc('updated_at')->get();
+        return view('page.admin.anime.index', [
+            'animes' => $anime
+        ]);
     }
 
     /**
@@ -25,7 +29,10 @@ class AnimeController extends Controller
      */
     public function create()
     {
-        //
+        $genre = Genre::all();
+        return view('page.admin.anime.create', [
+            'genres' => $genre
+        ]);
     }
 
     /**

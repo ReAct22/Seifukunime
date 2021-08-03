@@ -19,19 +19,29 @@
             </div>
           </div>
           <div class="card-body">
-            <a href="" class="btn btn-success mb-2"><i class="fas fa-plus"></i> Add</a>
+            <a href="{{ route('animes.create') }}" class="btn btn-success mb-2"><i class="fas fa-plus"></i> Add</a>
             <table id="example2" class="table table-bordered table-hover">
                 <thead>
                     <th class="text-center">No</th>
                     <th class="text-center">Title</th>
+                    <th class="text-center">Type</th>
                     <th class="text-center">Genre</th>
+                    <th class="text-center">Studio</th>
+                    <th class="text-center">Cover</th>
                     <th class="text-center">Action</th>
                 </thead>
                 <tbody>
+                  <?php 
+                      $i = 1;
+                    ?>
+                  @foreach ($animes as $item)
                   <tr>
-                    <td class="text-center"></td>
-                    <td class="text-center"></td>
-                    <td class="text-center"></td>
+                    <td class="text-center">{{ $i++ }}</td>
+                    <td class="text-center">{{ $item->title }}</td>
+                    <td class="text-center">{{ $item->type }}</td>
+                    <td class="text-center">{{ $item->genre->genre }}</td>
+                    <td class="text-center">{{ $item->studio }}</td>
+                    <td class="text-center">{{ $item->cover }}</td>
                     <td class="text-center">
                         <a href="" class="btn btn-warning"><i class="fas fa-edit"></i></a>
                         <form action="" method="POST" class="d-inline">
@@ -41,6 +51,7 @@
                         </form>
                     </td>
                 </tr>
+                  @endforeach
                 </tbody>
             </table>
           </div>

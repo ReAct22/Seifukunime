@@ -19,6 +19,10 @@
 <script src="{{ url('backend') }}/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
 <script src="{{ url('backend') }}/plugins/datatables-buttons/js/buttons.print.min.js"></script>
 <script src="{{ url('backend') }}/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+<!-- Page Of Select 2-->
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<!--Page of CkEditor-->
+<script src="https://cdn.ckeditor.com/ckeditor5/29.0.0/classic/ckeditor.js"></script>
 <!-- Page specific script -->
 <script>
     $(function () {
@@ -35,5 +39,19 @@
         "autoWidth": false,
         "responsive": true,
       });
+    });
+  </script>
+  <!--Script of CkEditor-->
+  <script>
+    ClassicEditor
+    .create(document.querySelector('.editor'))
+    .catch(error => {
+      console.error(error);
+    })
+  </script>
+  <!--Script Of Select 2-->
+  <script>
+    $(document).ready(function() {
+      $('.select').select2();
     });
   </script>
